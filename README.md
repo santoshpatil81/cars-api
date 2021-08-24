@@ -10,7 +10,7 @@ Before you proceed clone the github repo.
 
 ## Run Application
 
-1. #### Start MongoDB
+#### Start MongoDB
 ```
 $cd cars-api
 # Create data directory for MongoDB database.
@@ -18,7 +18,7 @@ $mkdir /tmp/data
 $mongod --dbpath /tmp/data
 
 ```
-1. #### Start server
+#### Start server
 ```
 $cd cars-api
 $npm install
@@ -29,9 +29,9 @@ The server runs on port 3200
 
 ## REST API documentation
 
-* The swagger docs for the rest api can be accessed by the link http://localhost:3200/docs
+The swagger docs for the rest api can be accessed by the link http://localhost:3200/docs
 
-* #### List of token endpoints
+#### List of token endpoints
 
 | Request|  Endpoint                    |  Description                         |
 | ------ | ---------------------------- | ------------------------------------ |
@@ -40,7 +40,7 @@ The server runs on port 3200
 | GET    | /api​/car​/:name             | Get details of the Car               |
 | DELETE | /api​/token​/:carId          | Delete the Car object                |
 
-* #### List of user endpoints
+#### List of user endpoints
 
 | Request|  Endpoint                    |  Description                         |
 |--------|------------------------------|--------------------------------------|
