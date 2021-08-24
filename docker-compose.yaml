@@ -1,0 +1,28 @@
+version: '3.3'
+
+services:
+  mongo-db:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - 27017:27017
+    restart: unless-stopped
+    networks:
+      - app-network
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
+    restart: unless-stopped
+    ports:
+    - 3200:3200
+    networks:
+      - app-network
+    links:
+      - mongo-db
+
+networks:
+  app-network:
+    driver: bridge
