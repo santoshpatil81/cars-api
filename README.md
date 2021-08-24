@@ -15,6 +15,9 @@ REST api to retrieve information related to the fleet of cars via a web service 
 Before you proceed clone the github repo.
 ```$ git clone https://github.com/santoshpatil81/cars-api.git ```
 
+## App deployment and CI/CD
+Refer https://github.com/santoshpatil81/cars-cicd.git for application deployment and CICD details.
+
 ## Run Application
 
 #### Start MongoDB
