@@ -43,6 +43,9 @@ Alternatively you can also use the *docker-compose* command to start the app usi
 
 The swagger docs for the rest api can be accessed by the link http://localhost:3200/docs
 
+![image](https://user-images.githubusercontent.com/11945086/130646521-a95de892-378e-457a-90c7-e7b163788648.png)
+
+
 #### List of token endpoints
 
 | Request|  Endpoint                    |  Description                         |
@@ -51,6 +54,18 @@ The swagger docs for the rest api can be accessed by the link http://localhost:3
 | GET    | /api​/cars​/                 | Get a list of Cars                   |
 | GET    | /api​/car​/:name             | Get details of the Car               |
 | DELETE | /api​/token​/:carId          | Delete the Car object                |
+
+##### POST ​/api​/cars​/create 
+
+![image](https://user-images.githubusercontent.com/11945086/130646774-cd7c3b70-77ab-43bb-afba-a162240bd80a.png)
+
+##### GET ​/api​/cars 
+
+![image](https://user-images.githubusercontent.com/11945086/130646805-4ad8b03e-19b2-4d8a-b73f-18d041d86bc4.png)
+
+##### GET ​/api​/car​/:name 
+
+![image](https://user-images.githubusercontent.com/11945086/130646866-5e48407a-9604-4b69-93af-530a684e23a0.png)
 
 #### List of user endpoints
 
