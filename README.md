@@ -10,7 +10,7 @@ REST api to retrieve information related to the fleet of cars via a web service 
   * body-parser (Parser for incoming request bodies)
   * cors (Express middleware to enable CORS )
   * swagger (Open source editor to design, define and document RESTful APIs)
-  * chai (BDD/TDD assertion library)
+  * chai/mocha (BDD/TDD assertion library)
 
 Before you proceed clone the github repo.
 ```$ git clone https://github.com/santoshpatil81/cars-api.git ```
@@ -81,6 +81,28 @@ Run the `Chai` base tests using the following commmand
 
 `npm run test`
 
+The following output is to be expected
+
+```
+  Integration test
+    Test get car details and list
+      ✔ Creating a new admin user using POST /api/user/register works. (144ms)
+      ✔ Login using the admin user using POST /api/user/login works. (84ms)
+      ✔ Creating a new Car using POST /api/car/create works.
+      ✔ Fetching Car details using GET /api/car/:name works.
+      ✔ Fetching Car details using GET /api/car/:name does not work without JWT Token. Expected to return 403 status code (Forbidden)
+      ✔ Creating one more Car using POST /api/car/create works.
+      ✔ Fetching Car details #2 using GET /api/car/:name works.
+      ✔ Getting the Car list using GET /api/cars works
+      ✔ Deleting the car 1 using DELETE /api/car/:carId works
+      ✔ Deleting the car 2 using DELETE /api/car/:carId works
+      ✔ Deleting an admin user works
+
+
+  11 passing (4s)
+  0 failing
+ ```
+ 
 ## Build instructions
 
 Use the following command to build the repo and create a docker image.
